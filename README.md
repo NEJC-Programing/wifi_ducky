@@ -1,5 +1,6 @@
 # Wi-Fi Ducky
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/abb06796b5eb4f6bb78d5c72c66ddc90)](https://www.codacy.com/app/NHTHEBEST/wifi_ducky?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NEJC-Programing/wifi_ducky&amp;utm_campaign=Badge_Grade)
+---
 Upload, save and run keystroke injections remotely with an ESP8266
 
 ## Contents
