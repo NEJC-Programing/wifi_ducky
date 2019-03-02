@@ -1,11 +1,6 @@
 # Wi-Fi Ducky
-Upload, save and run keystroke injections remotely with an ESP8266 + ATmega32u4
-
-![image of my DIY Wi-Fi Duck](https://raw.githubusercontent.com/spacehuhn/wifi_ducky/master/images/my_wifi_duck.jpg)
- 
-**Support me and my projects on [Patreon!](https://www.patreon.com/spacehuhn)**  
-[<img width="200" alt="Support me on Patreon" src="https://raw.githubusercontent.com/spacehuhn/wifi_ducky/master/images/patreon.png">](https://www.patreon.com/spacehuhn)  
-
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/abb06796b5eb4f6bb78d5c72c66ddc90)](https://www.codacy.com/app/NHTHEBEST/wifi_ducky?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NEJC-Programing/wifi_ducky&amp;utm_campaign=Badge_Grade)
+Upload, save and run keystroke injections remotely with an ESP8266
 
 ## Contents
 - [Introduction](#introduction)
@@ -37,15 +32,12 @@ The [USB Rubber Ducky](https://hakshop.com/products/usb-rubber-ducky-deluxe) by 
 
 The ESP8266 is a popular Wi-Fi chip used in a lot of projects. Because it's cheap, small and has its own file system ([SPIFFS](http://esp8266.github.io/Arduino/versions/2.0.0/doc/filesystem.html)), it's perfect for enabling an easy remote connection and holding Ducky Script payloads.
 
-Although the ESP8266 is awesome, it doesn't have native USB, which means it can't act as a keyboard :(  
-([cnlohr](https://github.com/cnlohr) made a cool project on this and added a USB stack himself: https://github.com/cnlohr/espusb. The problem with that is, that it isn't compatible with the current SDK version, also I wanted to use Arduino to make it more user friendly.)  
+We will be using ([cnlohr's](https://github.com/cnlohr) ([USB Stack](https://github.com/cnlohr/espusb)
 
-Here comes the ATmega32u4 into play!  
-It can act as keyboard and thanks to [Seytonic](http://youtube.com/seytonic) run Ducky Script ([link](https://github.com/Seytonic/Duckduino-microSD)).  
-So what I did is connecting the ATmega to the ESP8266 via serial.
+
 
 The ESP will open up a Wi-Fi access point and host a web interface from what you can upload and manage your scripts.  
-When you hit run, it will send the script to the ATmega, which then will execute it on the target machine.  
+When you hit run which then will execute it on the target machine.  
 
 ### The benefits of adding Wi-Fi
 
@@ -68,8 +60,8 @@ I don't take any responsibility for what you do with this project.
 ## Installation
 
 ### Short version:
-Upload the `arduino_wifi_duck` sketch to your ATmega32u4 and upload the `esp8266_wifi_duck` sketch to your ESP8266.  
-Then connect the serial pins (RX and TX (Arduino) to TX and RX (ESP8266)) and GND.
+Upload the `esp8266_wifi_duck` sketch to your ESP8266.  
+Then connect the GPIO pins (4 and 5 (ESP8266) to D- and D+ (USB) (add 1k resistor between GPIO 4 and 3.3v)) 
 
 ---
 
