@@ -33,7 +33,7 @@ The [USB Rubber Ducky](https://hakshop.com/products/usb-rubber-ducky-deluxe) by 
 
 The ESP8266 is a popular Wi-Fi chip used in a lot of projects. Because it's cheap, small and has its own file system ([SPIFFS](http://esp8266.github.io/Arduino/versions/2.0.0/doc/filesystem.html)), it's perfect for enabling an easy remote connection and holding Ducky Script payloads.
 
-We will be using ([cnlohr's](https://github.com/cnlohr) ([USB Stack](https://github.com/cnlohr/espusb)
+We will be using [cnlohr's](https://github.com/cnlohr) [USB Stack](https://github.com/cnlohr/espusb)
 
 
 
